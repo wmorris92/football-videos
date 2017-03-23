@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-import NewsItem from '../NewsItem';
-import './newsStream.css';
+import VideoItem from '../VideoItem';
+import './videoStream.css';
 
-class NewsStream extends Component {
+class VideoStream extends Component {
   constructor(props) {
     super(props);
 
@@ -16,16 +16,17 @@ class NewsStream extends Component {
   }
 
   render() {
-    let newsItems = [];
+    let videoItems = [];
     if (this.props.data) {
-      newsItems = this.props.data.children;
+      videoItems = this.props.data.children;
     }
     return (
       <div className="news-stream">
         {
-          newsItems.map((item) => {
+          videoItems.map((item) => {
             if (this.isVideoLink(item.data.url)) {
-              return <NewsItem
+              return <VideoItem
+                key={item.data.url}
                 title={item.data.title}
                 url={item.data.url}
                 time={item.data.created_utc}
@@ -38,4 +39,4 @@ class NewsStream extends Component {
   }
 }
 
-export default NewsStream;
+export default VideoStream;

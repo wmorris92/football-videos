@@ -1,29 +1,20 @@
 import React from 'react';
-import './newsItem.css'
+import './videoItem.css'
 
 const CURRENT_TIME = Date.now();
 
-const NewsItem = ({title, url, time, media}) => {
-  return media ? itemWithMedia(title, url, time, media) : itemWithoutMedia(title, url, time);
-  // return (
-  //   <a href={url}>
-  //     <div className="news-item" >
-  //       <text className="item-title">{formatTitle(title)}</text>
-  //       <text className="item-time">{formatTimeOne(time)}</text>
-  //     </div>
-  //   </a>
-  // );
+const VideoItem = ({title, url, time, media}) => {
+  return media ? itemWithThumbnail(title, url, time, media) : itemWithoutThumbnail(title, url, time);
 };
 
-function itemWithMedia(title, url, time, media) {
-  console.log(media.oembed.thumbnail_url);
+function itemWithThumbnail(title, url, time, media) {
   return (
     <a href={url}>
-      <div className="news-item news-item-with-media">
-        <div className="media-item">
+      <div className="video-item video-item-with-thumbnail">
+        <div className="thumbnail-item">
           <img src={media.oembed.thumbnail_url} alt="" height="90px" width="123px"/>
         </div>
-        <div className="news-item-without-media">
+        <div className="video-item-without-thumbnail">
           <text className="item-title">{formatTitle(title, true)}</text>
           <text className="item-time">{formatTimeOne(time)}</text>
         </div>
@@ -32,10 +23,10 @@ function itemWithMedia(title, url, time, media) {
   );
 };
 
-function itemWithoutMedia(title, url, time) {
+function itemWithoutThumbnail(title, url, time) {
   return (
     <a href={url}>
-      <div className="news-item news-item-without-media" >
+      <div className="video-item video-item-without-thumbnail" >
         <text className="item-title">{formatTitle(title, false)}</text>
         <text className="item-time">{formatTimeOne(time)}</text>
       </div>
@@ -43,8 +34,8 @@ function itemWithoutMedia(title, url, time) {
   );
 };
 
-function formatTitle(title, withMedia) {
-  const titleLimit = withMedia ? 90 : 200;
+function formatTitle(title, withThumbnail) {
+  const titleLimit = withThumbnail ? 90 : 200;
   if (title.length > titleLimit) {
     return `${title.substr(0, titleLimit)}...`
   } else {
@@ -62,4 +53,4 @@ function formatTimeOne(time) {
   return (hoursAgo === 1) ? `${hoursAgo} hour ago` : `${hoursAgo} hours ago`;
 };
 
-export default NewsItem;
+export default VideoItem;

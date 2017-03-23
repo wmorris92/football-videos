@@ -3,7 +3,7 @@ a {
   color: black;
 }
 
-.news-item {
+.video-item {
   width: 369px;
   height: 90px;
   margin-top: 40px;
@@ -16,17 +16,17 @@ a {
   font-family: 'Fira Sans', sans-serif;
 }
 
-.news-item-without-media {
+.video-item-without-thumbnail {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.news-item-with-media {
+.video-item-with-thumbnail {
   display: flex;
 }
 
-.news-item:hover {
+.video-item:hover {
   box-shadow: 2px 2px 5px #888888;
 }
 

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="JSX" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code style issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Error handlingJava</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>HAML</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Manifest</id>
+          </State>
+          <State>
+            <id>Portability issuesJava</id>
+          </State>
+          <State>
+            <id>Probable bugsCSS</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="$USER_HOME$/code/wyvern" value="1446481411000" />
+        <entry key="$USER_HOME$/dash/LoggingTools" value="1461679642000" />
+        <entry key="$USER_HOME$/dash/essential-play-code/chapter2-calc" value="1459259405000" />
+        <entry key="$USER_HOME$/dash/essential-play-code/chapter2-chat" value="1459259405000" />
+        <entry key="$USER_HOME$/dash/essential-play-code/chapter2-csv" value="1459259405000" />
+        <entry key="$USER_HOME$/dash/essential-play-code/chapter2-time" value="1459259405000" />
+        <entry key="$USER_HOME$/dash/essential-play-code/chapter3-todo-view" value="1459259406000" />
+        <entry key="$USER_HOME$/dash/essential-play-code/chapter4-animals" value="1459259406000" />
+        <entry key="$USER_HOME$/dash/essential-play-code/chapter4-color" value="1459259406000" />
+        <entry key="$USER_HOME$/dash/essential-play-code/chapter4-lights" value="1459259406000" />
+        <entry key="$USER_HOME$/dash/essential-play-code/chapter4-macro" value="1459259406000" />
+        <entry key="$USER_HOME$/dash/falcon" value="1458560266000" />
+        <entry key="$USER_HOME$/dash/firefly" value="1458558077000" />
+        <entry key="$USER_HOME$/dash/loggingtools" value="1461680888000" />
+        <entry key="$USER_HOME$/dash/safeentities" value="7308320830000" />
+        <entry key="$USER_HOME$/dash/smcapi" value="1458643444000" />
+        <entry key="$USER_HOME$/dash/smcui" value="1465470006000" />
+        <entry key="$USER_HOME$/dash/sosdb" value="2917289260000" />
+        <entry key="$USER_HOME$/dash/testbuilder" value="1471863172000" />
+        <entry key="$USER_HOME$/dash/xmlfactory" value="1471865441000" />
+        <entry key="$PROJECT_DIR$/../../Example" value="1464859656000" />
+        <entry key="$PROJECT_DIR$/../../scala/hazelplay" value="1471605551000" />
+        <entry key="$USER_HOME$/scala/coursera/example" value="1459516374000" />
+        <entry key="$USER_HOME$/scala/coursera/funsets" value="1462316240000" />
+        <entry key="$USER_HOME$/scala/coursera/objsets" value="1462319246000" />
+        <entry key="$USER_HOME$/scala/coursera/recfun" value="1462369130000" />
+        <entry key="$USER_HOME$/scala/marc-cats/catsexercise" value="1468333508000" />
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
