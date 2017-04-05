@@ -18,8 +18,11 @@
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "test": "react-scripts test --env=jsdom --coverage",
-    "test:hot": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom ",
+    "test:coverage": "react-scripts test --env=jsdom --coverage",
     "eject": "react-scripts eject"
+  },
+  "jest": {
+    "verbose": true
   }
 }
