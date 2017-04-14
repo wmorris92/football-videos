@@ -29,6 +29,7 @@ class VideoStream extends Component {
                 key={item.data.url}
                 title={item.data.title}
                 url={item.data.url}
+                redditUrl={`http://www.reddit.com${item.data.permalink}`}
                 time={item.data.created_utc}
                 media={item.data.media}/>
             }

@@ -1,13 +1,14 @@
 import React from 'react';
 import './videoItem.css'
+import comment from './comment.svg'
 
 const CURRENT_TIME = Date.now();
 
-const VideoItem = ({title, url, time, media}) => {
-  return media ? itemWithThumbnail(title, url, time, media) : itemWithoutThumbnail(title, url, time);
+const VideoItem = ({title, url, redditUrl, time, media}) => {
+  return media ? itemWithThumbnail(title, url, redditUrl, time, media) : itemWithoutThumbnail(title, url, redditUrl, time);
 };
 
-function itemWithThumbnail(title, url, time, media) {
+function itemWithThumbnail(title, url, redditUrl, time, media) {
   return (
     <a href={url}>
       <div className="video-item video-item-with-thumbnail">
@@ -16,19 +17,29 @@ function itemWithThumbnail(title, url, time, media) {
         </div>
         <div className="video-item-without-thumbnail">
           <text className="item-title">{formatTitle(title, true)}</text>
-          <text className="item-time">{formatTimeOne(time)}</text>
+          <div className="item-baseline">
+            <text className="item-time">{formatTimeOne(time)}</text>
+            <a className="item-comments" href={redditUrl} target="_blank">
+              <img src={comment} alt="Comment" />
+            </a>
+          </div>
         </div>
       </div>
     </a>
   );
 };
 
-function itemWithoutThumbnail(title, url, time) {
+function itemWithoutThumbnail(title, url, redditUrl, time) {
   return (
     <a href={url}>
       <div className="video-item video-item-without-thumbnail" >
         <text className="item-title">{formatTitle(title, false)}</text>
-        <text className="item-time">{formatTimeOne(time)}</text>
+        <div>
+          <a className="item-comments" href={redditUrl} target="_blank">
+            <img src={comment} alt="Comment" />
+          </a>
+          <text className="item-time">{formatTimeOne(time)}</text>
+        </div>
       </div>
     </a>
   );
