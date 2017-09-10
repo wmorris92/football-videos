@@ -12,7 +12,7 @@ class VideoStream extends Component {
 
   isVideoLink(url) {
     //TODO change to regex
-    return url.includes('streamable') || url.includes('nya') || url.includes('youtu') || url.includes('oddshot') || url.includes('mixtape') || url.includes('clippituser');
+    return url.includes('streamable') || url.includes('nya') || url.includes('youtu') || url.includes('oddshot') || url.includes('mixtape') || url.includes('clippituser') || url.includes('imgtc');
   }
 
   render() {
@@ -29,7 +29,6 @@ class VideoStream extends Component {
                 key={item.data.url}
                 title={item.data.title}
                 url={item.data.url}
-                redditUrl={`http://www.reddit.com${item.data.permalink}`}
                 time={item.data.created_utc}
                 media={item.data.media}/>
             }

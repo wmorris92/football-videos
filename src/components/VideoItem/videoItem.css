@@ -35,18 +35,9 @@ a {
   font-size: 90%;
 }
 
-.item-baseline {
-  display: flex;
-  justify-content: space-between;
-}
-
-.item-comments {
-  padding: 5px;
-}
-
 .item-time {
+  text-align: right;
   color: #848484;
   padding: 5px;
   font-size: 80%;
-  vertical-align: text-bottom;
 }
