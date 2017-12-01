@@ -9,9 +9,7 @@ class App extends Component {
     return (
       <div>
         <Title />
-        <Fetch url="https://www.reddit.com/r/soccer/.json?limit=100" >
-          <VideoStream />
-        </Fetch>
+        <VideoStream />
       </div>
     );
   }

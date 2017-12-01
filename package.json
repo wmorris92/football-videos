@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "homepage": "http://footballvids.co.uk/",
   "dependencies": {
+    "fela": "^6.0.3",
     "react": "15.4.2",
     "react-dom": "15.4.2",
+    "react-fela": "^6.0.3",
     "react-fetch": "0.0.9"
   },
   "devDependencies": {

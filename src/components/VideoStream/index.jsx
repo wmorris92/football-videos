@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { createComponent } from 'react-fela'
 
 import VideoItem from '../VideoItem';
 import './videoStream.css';
@@ -10,20 +11,30 @@ class VideoStream extends Component {
     this.state = { items: [] };
   }
 
+  componentDidMount() {
+    fetch('https://www.reddit.com/r/soccer/.json?limit=100')
+      .then(response => response.json())
+      .then(data => {
+        this.setState({ items: data.data.children });
+      })
+  }
+
   isVideoLink(url) {
     //TODO change to regex
     return url.includes('streamable') || url.includes('nya') || url.includes('youtu') || url.includes('oddshot') || url.includes('mixtape') || url.includes('clippituser') || url.includes('imgtc');
   }
 
   render() {
-    let videoItems = [];
-    if (this.props.data) {
-      videoItems = this.props.data.children;
+    const { items } = this.state
+
+    if (items.length === 0) {
+      return <Loading>Loading...</Loading>
     }
+
     return (
       <div className="news-stream">
         {
-          videoItems.map((item) => {
+          items.map((item) => {
             if (this.isVideoLink(item.data.url)) {
               return <VideoItem
                 key={item.data.url}
@@ -38,5 +49,13 @@ class VideoStream extends Component {
     );
   }
 }
+
+const Loading = createComponent(() => ({
+  textAlign: 'center',
+  marginTop: '30px',
+  color: 'grey',
+  fontFamily: 'Fira Sans, sans-serif',
+  fontSize: '40px',
+}));
 
 export default VideoStream;
