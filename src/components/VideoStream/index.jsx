@@ -21,7 +21,7 @@ class VideoStream extends Component {
 
   isVideoLink(url) {
     //TODO change to regex
-    return url.includes('streamable') || url.includes('nya') || url.includes('youtu') || url.includes('oddshot') || url.includes('mixtape') || url.includes('clippituser') || url.includes('imgtc');
+    return url.includes('streamable') || url.includes('nya') || url.includes('youtu') || url.includes('oddshot') || url.includes('mixtape') || url.includes('clippituser') || url.includes('imgtc') || url.includes('slightclip');
   }
 
   render() {
